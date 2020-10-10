@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Fotos</title>
+
+
+</head>
+
+<body>
+
+
+
+    <!--Creo la barra de navegacion-->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+
+        <!--Creo el buton para el responsive-->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Image and text -->
+
+        <a class="navbar-brand" href="#">
+            <img src="img/doce.jpg" width="30" height="40" class="d-inline-block align-top">
+            <!--para una imagen svg como es una imagen en vectores se debe poner el alto y ancho-->
+            Fox Terrier
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <!--con mr-auto lo que hago es llevar los iconos de youtube y face a la derecha y con text center alineo los elementos del menu al centro en tamaño pequeño-->
+                <a class="nav-item nav-link " href="proyecto.html">Inicio</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Información general
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="caracteristicas.html">Características físicas y carácter</a>
+                        <a class="dropdown-item" href="Tipos de Fox Terrier.html">Tipos de Fox Terrier</a>
+                        <a class="dropdown-item" href="salud.html">Salud</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="Nutricion.html">Nutrición</a>
+                <a class="nav-item nav-link active" href="Imagenes.html">Fotos</a>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <form action="miformulario.php" method="post" class="form-inline">
+                    <input type="text" placeholder="Buscar" class="form-control mr-sm-2">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+                <!--<a href="#" class="mr-2"><img src="img/instagram-bosquejado.svg" width="30" height="30"></a>
+                <a href="#"><img src="img/youtube.svg" width="30" height="30"></a>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-------Contenido----->
+    <img src="img/44.jpg" class="w-25 img-thumbnail">
+    <img src="img/cuatro.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/35.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/26.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/36.jpg" class="w-25 img-thumbnail">
+    <img src="img/50.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/31.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/IMG_20190824_110112.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/22.jpg" class="w-25 img-thumbnail">
+    <img src="img/trece.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/32.jpg" class="w-25 float-left img-thumbnail">
+    <img src="img/58.jpg" class="w-25 float-left img-thumbnail">
+    <!--FOOTER-->
+
+    <div class="card text-center">
+        <div class="card-header bg-dark">
+            <a href="#"><img src="img/facebook.svg" width="30" height="30"></a>
+            <a href="#" class="mr-2"><img src="img/instagram-bosquejado.svg" width="30" height="30"></a>
+            <a href="#"><img src="img/youtube.svg" width="30" height="30"></a>
+
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Síguenos en nuestras redes sociales</h5>
+            <p class="card-text">Envíanos tus fotos, dudas o consultas:</p>
+            <a href="Formulario.html" class="btn btn-success">Aquí</a>
+        </div>
+        <div class="card-footer text-muted bg-dark text-italic">
+            © Desarrollado por Andrea Díaz Macias
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>

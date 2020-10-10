@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Formulario de consultas</title>
+
+
+</head>
+
+<body>
+    <img src="img/diecisiete.jpg" class="img-fluid w-25" alt="Responsive image">
+    <img src="img/dieciocho.jpg" class="img-fluid w-25 float-left" alt="Responsive image">
+    <img src="img/40.jpg" class="img-fluid w-25 float-left" alt="Responsive image">
+    <img src="img/54.jpg" class="img-fluid w-25 float-left" alt="Responsive image">
+
+
+
+    <!--Creo la barra de navegacion-->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+
+        <!--Creo el buton para el responsive-->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Image and text -->
+
+        <a class="navbar-brand" href="#">
+            <img src="img/doce.jpg" width="30" height="40" class="d-inline-block align-top">
+            <!--para una imagen svg como es una imagen en vectores se debe poner el alto y ancho-->
+            Fox Terrier
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <!--con mr-auto lo que hago es llevar los iconos de youtube y face a la derecha y con text center alineo los elementos del menu al centro en tamaño pequeño-->
+                <a class="nav-item nav-link active" href="proyecto.html">Inicio</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Información general
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="caracteristicas.html">Características físicas</a>   
+                        <a class="dropdown-item" href="Tipos de Fox Terrier.html">Tipos de Fox Terrier</a>
+                        <a class="dropdown-item" href="salud.html">Salud</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="Nutricion.html">Nutrición</a>
+                <a class="nav-item nav-link" href="Imagenes.html">Fotos</a>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <form action="miformulario.php" method="post" class="form-inline">
+                    <input type="text" placeholder="Buscar" class="form-control mr-sm-2">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+                <!--<a href="#" class="mr-2"><img src="img/instagram-bosquejado.svg" width="30" height="30"></a>
+                <a href="#"><img src="img/youtube.svg" width="30" height="30"></a>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-------Contenido----->
+<p>
+<h1 class="text-center">Formulario</h1>
+</p>
+    <form class="mr-3 ml-3">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Nombre</label>
+            <input type="text" class="form-control" id="validationDefault01" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Apellido</label>
+            <input type="text" class="form-control" id="validationDefault02" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Ciudad</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">¿Cuántos fox-terriers tiene?</label>
+            <select class="custom-select" id="validationDefault04" required>
+              <option selected disabled value="">0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6 o más</option>
+            </select>
+          </div>
+          
+        </div>
+        <form class="was-validated">
+            <div class="mb-3">
+              <label for="validationTextarea">Consultas o comentarios</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Escribe tu comentario aquí" required></textarea>
+              <div class="invalid-feedback">
+                Por favor ingresa tu mensaje
+              </div>
+            </div>
+            Envíanos tus fotos...
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label> <br>
+              </div> <br>
+      
+        <button class="btn btn-dark mt-2 mb-3" type="submit">Enviar </button>
+      </form>
+
+      
+
+
+    <!--FOOTER-->
+
+    <div class="card text-center">
+        <div class="card-header bg-dark">
+            <a href="#"><img src="img/facebook.svg" width="30" height="30"></a>
+            <a href="#" class="mr-2"><img src="img/instagram-bosquejado.svg" width="30" height="30"></a>
+            <a href="#"><img src="img/youtube.svg" width="30" height="30"></a>
+
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Síguenos en nuestras redes sociales</h5>
+            <p class="card-text">Envíanos tus fotos, dudas o consultas:</p>
+            <a href="Formulario.html" class="btn btn-success">Aquí</a>
+        </div>
+        <div class="card-footer text-muted bg-dark text-italic">
+            © Desarrollado por Andrea Díaz Macias
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
